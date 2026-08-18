@@ -1,0 +1,35 @@
+{
+  "name": "genpark-terminal-first-developer-agent-workspace-navigator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Interactive terminal-first developer agent & command-line workspace navigator.",
+  "author": "genpark",
+  "category": "developer",
+  "tags": [
+    "terminal-agent",
+    "cli-navigator",
+    "workspace-explorer",
+    "developer-agent",
+    "ph-august-dev"
+  ],
+  "inputs": {
+    "cli_command_intent": {
+      "type": "string"
+    },
+    "working_directory": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "shell_command_executed": {
+      "type": "string"
+    },
+    "summary_feedback": {
+      "type": "string"
+    },
+    "exit_code": {
+      "type": "integer"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
